@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color:rgb(231, 200, 62);
+    display:flex;
+    height:100px;   
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header img{
+    height:60px;
+    margin-left:50px;
+    margin-right:10px;
+    border-radius:30px;
+}
+
+.page-links{
+    margin:30px;
+    display:flex;
+    gap:30px;
+}
+
+.page-links a {
+    color:#000;
+    position:relative;
+}
+
+.page-links a::after {
+    content:" ";
+    position:absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+.page-links a:hover::after {
+    width:100%;
+}
+
+form {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border:2px solid black;
+    margin-top:100px;
+    margin-left:500px;
+    background-color:#f0ff6c;
+    color:black;
+    width:400px;
+    height:300px;
+    border-radius:30px;
+}
+
+.form-item{
+    width:250px;
+    height:40px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.submit {
+    margin: 10px;
+    width:80px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.submit:hover {
+    background-color:#f0ff6c;
+    transition: 0.3s;
+}
+
+.quiz{
+    width:90%;
+    background-color:aliceblue;;
+    color:#000;
+    margin-left:5%;
+    margin-top: 300px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.quiz-header {
+    margin:20px;
+
+}
+.correct {
+  background-color: #d4edda;
+  border-left: 4px solid #28a745;
+  padding-left: 8px;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+  border-left: 4px solid #dc3545;
+  padding-left: 8px;
+}
+
+.missed {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding-left: 8px;
+}

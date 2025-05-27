@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../Css/quiz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Quiz</title>
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <img src="../assets/logo.png" alt="Logo" class="logo">
+            <h2 class="page-title">Quizzle</h2>
+        </div>
+
+        <div class="page-links">
+            <a href="#">dummy 1</a>
+            <a href="#">dummy 2</a>
+            <a href="#">dummy 3</a>
+        </div>
+    </nav>
+
+    <div>
+        <form class="form" action="">
+            <h2>Select a Subject:</h2>
+            <select class="form-item" id="categoryDropdown">
+            </select>
+            <p class="categoryError"></p>
+
+            <h2>Select Difficulty:</h2>
+            <select class="form-item" id="difficultyDropdown">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <p class="difficultyError"></p>
+
+            <h2>Select Type:</h2>
+            <select class="form-item" id="typeDropdown">
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+            <p class="typeError"></p>
+
+            <input type="submit" value="submit" class="submit">
+        </form>
+    </div>
+
+    <div class="quiz"></div>
+
+<script src="../Js/quiz.js"></script>
+</body>
+</html>
